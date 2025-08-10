@@ -24,7 +24,6 @@ function normalizeRecipe(r) {
   if (!r) return null;
   return {
     title: r?.label ?? "Untitled",
-    // image: r?.images?.REGULAR?.url || r?.images?.SMALL?.url || r?.image || "",
     image: r?.image || "",
     url: r?.url ?? "#",
     source: r?.source ?? "",
